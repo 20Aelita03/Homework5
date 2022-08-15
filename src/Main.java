@@ -2,88 +2,88 @@ public class Main {
     public static void main(String[] args) {
         //Task 1
 
-        int [] Box = new int[3];
-        Box [0] = 1;
-        Box [1] = 2;
-        Box [2] = 3;
+        int [] box = new int[3];
+        box [0] = 1;
+        box [1] = 2;
+        box [2] = 3;
 
-        double [] Casket = new double[]{1.57, 7.654, 9.986};
+        double [] casket = new double[]{1.57, 7.654, 9.986};
 
-        boolean [] Package = new boolean[]{true, false};
+        boolean [] paackage = new boolean[]{true, false};
 
         //Task2
 
-        int a = 0;
-        for (; a < Box.length; a++) {
-            if ( a == (Box.length - 1)) {
-                System.out.print(Box[a]);
+
+        for (int a = 0; a < box.length; a++) {
+            if ( a == (box.length - 1)) {
+                System.out.print(box[a]);
             } else {
-                System.out.print(Box[a] + ", ");
+                System.out.print(box[a] + ", ");
             }
         }
         System.out.println();
 
-        int b = 0;
-        for (; b < Casket.length; b++) {
-            if ( b == (Casket.length - 1)) {
-                System.out.print(Casket[b]);
+
+        for (int b = 0; b < casket.length; b++) {
+            if ( b == (casket.length - 1)) {
+                System.out.print(casket[b]);
             } else {
-                System.out.print(Casket[b] + ", ");
+                System.out.print(casket[b] + ", ");
             }
         }
         System.out.println();
 
-        int c = 0;
-        for (; c < Package.length; c++) {
-            if ( c == (Package.length - 1)) {
-                System.out.print(Package[c]);
+        for (int c = 0; c < paackage.length; c++) {
+            if ( c == (paackage.length - 1)) {
+                System.out.print(paackage[c]);
             } else {
-                System.out.print(Package[c] + ", ");
+                System.out.print(paackage[c] + ", ");
             }
         }
         System.out.println();
 
         //Task3
 
-        int i = Box.length - 1;
-        for (; i >= 0; i--) {
+
+        for (int i = box.length - 1; i >= 0; i--) {
             if (i == 0) {
-                System.out.print(Box[i]);
+                System.out.print(box[i]);
             } else {
-            System.out.print(Box[i] + ", ");
+            System.out.print(box[i] + ", ");
             }
 
         }
         System.out.println();
 
-        int k = Casket.length - 1;
-        for (; k >= 0; k--) {
+
+        for (int k = casket.length - 1; k >= 0; k--) {
             if (k == 0) {
-                System.out.print(Casket[k]);
+                System.out.print(casket[k]);
             } else {
-                System.out.print(Casket[k] + ", ");
+                System.out.print(casket[k] + ", ");
             }
         }
         System.out.println();
 
-        int s = Package.length - 1;
-        for (; s >= 0; s--) {
+
+        for (int s = paackage.length - 1; s >= 0; s--) {
             if (s == 0) {
-                System.out.print(Package[s]);
+                System.out.print(paackage[s]);
             } else {
-                System.out.print(Package[s] + ", ");
+                System.out.print(paackage[s] + ", ");
             }
         }
         System.out.println( );
 
 
         //Task4
-        int o = 0;
-        for (; o < Box.length; o++) {
-            if (Box[o] % 2 == 0) {
-                System.out.print(Box[o] + " ");
+
+        for (int o = 0; o < box.length; o++) {
+            if (box[o] % 2 != 0) {
+                box[o] += 1;
+                System.out.print(box[o] );
             } else {
-                System.out.print( (Box[o] + 1) + " ");
+                System.out.print( box[o] );
             }
         }
     }
